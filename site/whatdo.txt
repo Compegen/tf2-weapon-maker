@@ -1,0 +1,3 @@
+Replace positive, negative, and neutral dropdowns with Additive, Percentage, Absolute
+
+technical name : physical name : positive/negative
