@@ -13,6 +13,9 @@
 			var opt = document.createElement("option");
 			opt.value = [tfattributes[c[o]][i].state, tfattributes[c[o]][i].phyVal, tfattributes[c[o]][i].techVal];
 			
+			if(tfattributes[c[o]][i].state == "+") { opt.id = "positiveColor"}
+			if(tfattributes[c[o]][i].state == "-") { opt.id = "negativeColor"}
+			
 			opt.innerHTML = "(" + tfattributes[c[o]][i].state + ") : " + tfattributes[c[o]][i].techVal;
 			currentElement.appendChild(opt);
 		}

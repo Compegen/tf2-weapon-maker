@@ -8,9 +8,39 @@
 		<script src="tfattributes.js"></script>
 		
 		<style>
+			input {
+				padding: 1px;
+				margin: 2px 0px 2px 0px;
+				border: none;
+				background-color: #333333;
+				color: white;
+			}
+			select {
+				padding: 1px;
+				margin: 2px 0px 2px 0px;
+				border: none;
+				background-color: #333333;
+				color: white;
+			}
+			#finalOutput {
+				padding: 1px;
+				margin: 2px 0px 2px 0px;
+				border: none;
+				background-color: #333333;
+				color: white;
+			}
+			#base {
+				text-align: center;
+				align-content: center;
+				background-image: url("ctf_bigD.jpg");
+				background-size: 1920px 1080px;
+				background-color: #171717; font-family: Verdana, Geneva, sans-serif;
+				color: white;
+			}
 			#weaponBox {
 				margin: auto;
 				border-radius: 10px;
+				border-color: #444444;
 				background: #24201B;
 				width: 300px;
 				min-height: 400px;
@@ -25,14 +55,20 @@
 				height: 90px;
 				border-radius: 10px;
 				background: #3C362F;
-			}/*
-			#tableStat {
+			}
+			#positiveColor {
+				color: #99CCFF;
+			}
+			#negativeColor {
+				color: #FF4040;
+			}
+			/*#tableStat {
 				padding-bottom: 10px;
 			}*/
 		</style>
 		
 	</head>
-	<body style="text-align: center; align-content: center; background-color: #E5E5E5; font-family: Verdana, Geneva, sans-serif">
+	<body id="base">
 
 		<h1 style="font-weight: bold; margin-bottom: 0px">TF2 Custom Weapon Maker</h1>
 		<div style="margin: 0px; padding-bottom: 25px">Made by Derek R (AKA Compegen)</div>
