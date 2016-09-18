@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TF2 Custom Weapon Maker</title>
+		<meta charset="UTF-8">
+		
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+		<script src="tfattributes.js"></script>
+		
+		<style>
+			#weaponBox {
+				margin: auto;
+				border-radius: 10px;
+				background: #24201B;
+				width: 300px;
+				min-height: 400px;
+				align-content: center;
+				padding: 2px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				
+			}
+			#weaponIcon {
+				width: 120px;
+				height: 90px;
+				border-radius: 10px;
+				background: #3C362F;
+			}/*
+			#tableStat {
+				padding-bottom: 10px;
+			}*/
+		</style>
+		
+	</head>
+	<body style="text-align: center; align-content: center; background-color: #E5E5E5; font-family: Verdana, Geneva, sans-serif">
+
+		<h1 style="font-weight: bold; margin-bottom: 0px">TF2 Custom Weapon Maker</h1>
+		<div style="margin: 0px; padding-bottom: 25px">Made by Derek R (AKA Compegen)</div>
+		<table style="margin-left: auto; margin-right: auto">
+			<tr>
+				<!-------------------------------------------------------------------------------------------------------->
+				<td style="width: 30%; font-size: 20px; font-weight: bold">
+					<div>Weapon Name:</div>
+					<input type="text" id="weaponNameInput"/>
+					<br>
+					<button onclick="getWepName()">Submit</button>
+					<br>
+					<div style="padding-top: 25px">Class & Slot</div>
+					<select id="wepClass" style="width: 100px">
+						<option value="scout">Scout</option>
+						<option value="soldier">Soldier</option>
+						<option value="pyro">Pyro</option>
+						<option value="demoman">Demo</option>
+						<option value="heavyweapons">Heavy</option>
+						<option value="engineer">Engineer</option>
+						<option value="medic">Medic</option>
+						<option value="sniper">Sniper</option>
+						<option value="spy">Spy</option>
+					</select>
+					<select id="wepSlot" style="width: 100px">
+						<option value="0">Primary</option>
+						<option value="1">Secondary</option>
+						<option value="2">Melee</option>
+						<option value="3">PDF 1</option>
+						<option value="4">PDF 2</option>
+					</select>
+					
+				</td>
+				<!-------------------------------------------------------------------------------------------------------->
+				<td style="width: 30%">
+					<div id="weaponBox">
+						<center>
+							<div id="weaponIcon"></div>
+							<div id="weaponStats" style="padding-left: 10px; padding-right: 10px;text-align: center">
+					
+								<div id="weaponName" style="color: #FFD700; font-size: 20px; text-transform: uppercase; padding-bottom: 20px; padding-top: 10px; font-weight: bold"></div>
+								
+								<div id="positiveStats" style="color: #99CCFF; margin-bottom: 10px"></div>
+								
+								<div id="negativeStats" style="color: #FF4040; margin-bottom: 10px"></div>
+								
+								<div id="neutralStats" style="color: #EBE2CA; margin-top: 15px; margin-bottom: 10px"></div>
+							</div>
+				
+						</center>
+					</div>
+				</td>
+				<!-------------------------------------------------------------------------------------------------------->
+				<td style="width: 30%; font-size: 20px; font-weight: bold">
+				<script> function pointAttribute(a) { getAttribute(a);}</script>
+				<!--script>var percentage = "percentage", additive = "additive", absolute = "absolute";</script-->
+				
+					<!--PERCENT ATTRIBUTE LIST-->
+					<div>Percentage Attributes:</div>
+					<select id="percentageAttributesList" style="width: 240px">
+						<option value="none">---</option>
+					</select>
+					<input type="text" id="percentageNumber" style="width: 30px">
+					<br>
+					<button onClick="pointAttribute('percentage')">Add</button>
+					
+					<br>
+					
+					<!--ADDITIVE ATTRIBUTE LIST-->
+					<div style="padding-top: 25px">Additive Attributes:</div>
+					<select id="additiveAttributesList" style="width: 240px">
+						<option value="none">---</option>
+					</select>
+					<input type="text" id="additiveNumber" style="width: 30px">
+					<br>
+					<button onClick="pointAttribute('additive')">Add</button>
+					<br>
+					
+					<!--ABSOLUTE ATTRIBUTE LIST-->
+					<div style="padding-top: 25px">Absolute Attributes:</div>
+					<select id="absoluteAttributesList" style="width: 270px">
+						<option value="none">---</option>
+					</select>
+					<br>
+					<button onclick="pointAttribute('absolute')">Add</button>
+					<br>
+							
+				
+				</td>
+			</tr>
+		</table>
+		<br>
+		<textarea id="finalOutput" readonly style="width: 600px; height: 200px">tfattributesfilemakermaybehopefullyunkown</textarea>
+		<br>
+		Base Class: <input type="text" id="baseclass" style="width:100px"> Base Index: </input>
+		<input type="text" id="baseindex" style="width:100px">
+		<br>
+		<button onclick="generateOutput()">Generate File</button>
+		
+		<script src="attributeProcessing.js"></script>
+	</body>
+</html>

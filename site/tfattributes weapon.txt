@@ -1,0 +1,28 @@
+"Medispenser"
+{
+	"classes"
+	{
+		"medic"		"1"
+	}
+	"baseclass"		"medigun"
+	"baseindex"		"29"
+	"description"	"Healing a teammate restores 2% of their offhand ammo every second\nYou share all positive boosts with your patient\n \n-25% heal rate\n \nUberCharge: Dispensing Fury\nPatient gets infinite clip, infinite ammo, and 25% faster fire rate."
+	"attributes"
+	{
+		"heal rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"medi gun restores ammo"
+		{
+			"plugin"	"custom-attributes"
+			"value"		"0.02"
+		}
+		"medi gun shares positive boosts"
+		{
+			"plugin"	"custom-attributes"
+			"value"		"1" 
+		}
+	}
+}
