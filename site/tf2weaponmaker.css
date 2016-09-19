@@ -1,0 +1,57 @@
+input {
+	padding: 1px;
+	margin: 2px 0px 2px 0px;
+	border: none;
+	background-color: #444444;
+	color: white;
+}
+select {
+	padding: 1px;
+	margin: 2px 0px 2px 0px;
+	border: none;
+	background-color: #444444;
+	color: white;
+}
+#finalOutput {
+	padding: 1px;
+	margin: 2px 0px 2px 0px;
+	border: none;
+	background-color: #444444;
+	color: white;
+}
+#base {
+	text-align: center;
+	align-content: center;
+	background-image: url("ctf_bigD_blur.jpg");
+	background-size: 1920px 1080px;
+	background-color: #171717; font-family: Verdana, Geneva, sans-serif;
+	color: white;
+}
+#weaponBox {
+	margin: auto;
+	border-radius: 10px;
+	border-color: #444444;
+	background: #24201B;
+	width: 300px;
+	min-height: 400px;
+	align-content: center;
+	padding: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+#weaponIcon {
+	width: 120px;
+	height: 90px;
+	border-radius: 10px;
+	background: #3C362F;
+}
+#positiveColor {
+	color: #99CCFF;
+}
+#negativeColor {
+	color: #FF4040;
+}
+/*#tableStat {
+	padding-bottom: 10px;
+}*/
