@@ -1,5 +1,9 @@
 # tf2-weapon-maker
 
-**!!!! DEPRECATED FOR THE FORSEABLE FUTURE !!!!**
+*Wow a major rebase!*
 
-Allows you to create TF2 weapons using built-in tf2 attributes system
+V2.0 to be released soon
+
+____
+
+This program is now designed for eas-to-create weapon cards. **It cannot export to customTF2 format; only markdown & PNG
